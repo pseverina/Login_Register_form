@@ -1,0 +1,84 @@
+
+.stars, .twinkling{
+    margin-top: 0px;
+    margin-left: -15px;
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+.stars {
+  background:#000 url(../img/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(../img/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+#header-name{
+    color:whitesmoke;
+    text-align: center;
+    z-index: 0;
+    margin-top: 4%;
+}
+
+form{
+    border-color: whitesmoke; 
+    border-style: groove;
+    border-radius: 5px;
+    width: 28%;
+    height: 53%;
+    margin-left: 36%;
+    padding: 2%;
+}
+
+
+ hr{
+    width:90%;
+    float: left; 
+    padding-left: 2%;
+ }
+
+ #btn_regist{
+     margin-left: 30%;
+ }
+
+ #label_regist{
+    margin-top: 2%;
+    text-align: center;
+ }
+
+ .center{
+     text-align: center;
+ }
+
+ .white-color{
+    color:whitesmoke;
+}
