@@ -9,12 +9,12 @@
 }
 
 .stars {
-  background:#000 url(../img/stars.png) repeat top center;
+  background:#000 url(./img/stars.png) repeat top center;
   z-index:0;
 }
 
 .twinkling{
-  background:transparent url(../img/twinkling.png) repeat top center;
+  background:transparent url(./img/twinkling.png) repeat top center;
   z-index:1;
 
   -moz-animation:move-twink-back 200s linear infinite;
@@ -53,26 +53,17 @@ form{
     border-color: whitesmoke; 
     border-style: groove;
     border-radius: 5px;
+    background: none;
     width: 28%;
-    height: 53%;
+    height: 70%;
     margin-left: 36%;
-    padding: 2%;
+    padding-left: 3%;
+    padding-top: 1.5%; 
 }
 
 
- hr{
-    width:90%;
-    float: left; 
-    padding-left: 2%;
- }
-
- #btn_regist{
-     margin-left: 30%;
- }
-
  #label_regist{
-    margin-top: 2%;
-    text-align: center;
+    margin-top: -3%;
  }
 
  .center{
@@ -80,5 +71,22 @@ form{
  }
 
  .white-color{
-    color:whitesmoke;
-}
+     color:whitesmoke;
+ }
+
+ #btn_submit{
+     margin-top: 2%;
+ }
+
+ #message{
+     margin-top: 10%; 
+     text-align: center;
+     margin-left: 15%;
+     width: 70%;
+ }
+
+ #error{
+     color:red;
+     position: absolute;
+     margin: 15%; 
+ }
